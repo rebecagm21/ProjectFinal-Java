@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.loading-message {
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.app-card {
+  width: 380px;
+  max-width: 95vw;
+  background: #6541AF;
+  border-radius: 18px;
+  padding: 24px 24px 32px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  position: relative;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 4px;
+}
+
+.app-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.focus.gif{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 8px auto 16px;
+  display: block;
+}
+
+.timer-display {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.timer-label {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.progress-bar-wrapper {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 999px;
+  overflow: hidden;
+  height: 10px;
+  margin-bottom: 20px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  width: 0;
+  background: #ffe066;
+  transition: width 0.3s linear;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: transform 0.1s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: #fff;
+  color: #c8102e;
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  background: transparent;
+  color: #fff;
+}
+
+.session-info {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.task-input-wrapper {
+  margin-top: 6px;
+}
+
+.task-input-label {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  outline: none;
+  font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.task-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mode-pill {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 0.7rem;
+  font-weight:bolder;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #F65B2B;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

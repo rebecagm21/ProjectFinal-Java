@@ -1,0 +1,12 @@
+{
+  "workMinutes": 2,
+  "shortBreakMinutes": 5,
+  "longBreakMinutes": 15,
+  "cyclesBeforeLongBreak": 2,
+  "motivationalPhrases": [
+    "Puedes hacerlo",
+    "¡Continua! Ya pronto terminas",
+    "No multitasking, solo esta tarea.",
+    "Adios a la procrastinación."
+  ]
+}
